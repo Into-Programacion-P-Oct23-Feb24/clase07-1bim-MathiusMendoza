@@ -26,6 +26,8 @@ public class Ejemplo06 {
         double suma_total = 0;
         double calificacion;
         boolean bandera = true;
+        double promedioF;
+        int contador = 0 ;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
@@ -38,6 +40,9 @@ public class Ejemplo06 {
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
+            contador = contador + 1 ;
+            
+            
 
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
@@ -47,8 +52,10 @@ public class Ejemplo06 {
                 bandera = false;
             }
         }
+        promedioF = suma_total/contador;
 
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        System.out.printf("Suma de calificaciones es %.2f\n El promedio es %.2f\n ", suma_total,promedioF );
+        
 
     }
 }
